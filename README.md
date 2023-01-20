@@ -27,6 +27,11 @@ For WSL, you should keep the `marple-pgt` directory in the Linux file sytem (e.g
 
 ## Tutorial
 
+If you're starting from multiple FASTQ files for each sample from basecalling then use `transfer_reads.sh` to combine them into a single fastq file:
+```bash
+src/transfer_reads.sh example barcode01=cz2 barcode02=uk20
+```
+
 Let's go through the pipeline using a fictional example.
 
 In this example, 2 samples have already been sequenced (using nanpore sequencing) and basecalled using Guppy.
